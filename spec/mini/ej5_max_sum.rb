@@ -28,6 +28,6 @@ describe '#max_sum' do
   end
 
   it 'returns the max sum, even if the ends are big' do
-    max_sum([3, 2, 2, 9]).must_equal
+    max_sum([3, 2, 2, 9]).must_equal 12
   end  
 end

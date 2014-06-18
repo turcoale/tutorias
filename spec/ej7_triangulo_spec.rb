@@ -5,8 +5,8 @@ begin
   require 'triangulo'
 rescue LoadError
   puts <<-INSTRUCTIONS
-    Dado 3 numeros decir si es o no es un triangulo.
-    Para eso hacer una clase triangulo que reciba los 3 números en el initializer e implementar el método valid? que retorne true o false dependiendo si es o no un triángulo.
+Dado 3 numeros decir si es o no es un triangulo.
+Para eso hacer una clase triangulo que reciba los 3 números en el initializer e implementar el método valid? que retorne true o false dependiendo si es o no un triángulo.
 
 
 INSTRUCTIONS
@@ -14,10 +14,6 @@ INSTRUCTIONS
 end
 
 describe '#triangulo' do
-
-  it 'triangulo initialize' do
-    expect(Triangulo.new 1, 2, 3).to eq 2
-  end
 
   it 'triangulo valid should be true when sizes are 1, 2 and 3' do
     expect(Triangulo.new(1, 2, 3).valid?).to eq true

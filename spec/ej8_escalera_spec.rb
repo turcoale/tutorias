@@ -24,7 +24,7 @@ describe '#triangulo' do
   end
 
   it 'escalera a 6' do
-    expect(escalera 5).to eq [1, 2, 3, 4, 5, 6]
+    expect(escalera 6).to eq [1, 2, 3, 4, 5, 6]
   end
 
 end

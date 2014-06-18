@@ -5,8 +5,13 @@ begin
   require 'escalera'
 rescue LoadError
   puts <<-INSTRUCTIONS
+<<<<<<< HEAD
 Dado un numero n, retornar un array con los valores de 1 a n
 Avanzado: no usar iteradores.
+=======
+    Dado un numero n, retornar un array con los valores de 1 a n
+    Avanzado: no usar iteradores.
+>>>>>>> 7b41abd3fd6deb092d7adf001c21e369a5382b9e
 
 
 INSTRUCTIONS

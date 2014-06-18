@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
 # no te preocupes por esta linea, más tarde la vas a entender
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift File.expand_path('../../../lib', __FILE__)
+
+require "minitest/autorun"
 
 begin
   require 'max_sum'
@@ -20,16 +23,11 @@ end
 
 describe '#max_sum' do
 
-  it 'return the max sum of 11 ' do
-    expect(max_sum([2, 5, 6, 5, 3])).to eq 11
-  end
-  
-  it 'return the missing number' do
-    expect(max_sum([8,1,2,3,4,5,6,7])).to eq(8 + 3 + 5 + 7)
+  it 'returns the max sum that doesnt contain consecutive elements' do
+    max_sum([2, 5, 6, 5, 3]).must_equal 11
   end
 
-  it 'return the missing number' do
-    expect(max_sum([1, -2, 999997, 999996, 0])).to eq(999997 + 1)
-  end
-
+  it 'returns the max sum, even if the ends are big' do
+    max_sum([3, 2, 2, 9]).must_equal 12
+  end  
 end
